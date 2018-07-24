@@ -1,0 +1,119 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/ubuntu/.nvm/versions/node/v6.11.2/bin/node',
+1 verbose cli   '/home/ubuntu/.nvm/versions/node/v6.11.2/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@3.10.10
+3 info using node@v6.11.2
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/home/ubuntu/workspace',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /home/ubuntu/.npm/@kissmybutton/motorcortex-flubber/0.0.0/package.tgz not in flight; packing
+9 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+10 info lifecycle @kissmybutton/motorcortex-flubber@0.0.0~prepublish: @kissmybutton/motorcortex-flubber@0.0.0
+11 silly lifecycle @kissmybutton/motorcortex-flubber@0.0.0~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/home/ubuntu/.npm/@kissmybutton/motorcortex-flubber/0.0.0/package.tgz',
+12 verbose tar pack   '/home/ubuntu/workspace' ]
+13 verbose tarball /home/ubuntu/.npm/@kissmybutton/motorcortex-flubber/0.0.0/package.tgz
+14 verbose folder /home/ubuntu/workspace
+15 verbose addLocalTarball adding from inside cache /home/ubuntu/.npm/@kissmybutton/motorcortex-flubber/0.0.0/package.tgz
+16 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd @kissmybutton/motorcortex-flubber@0.0.0
+18 verbose afterAdd /home/ubuntu/.npm/@kissmybutton/motorcortex-flubber/0.0.0/package/package.json not in flight; writing
+19 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /home/ubuntu/.npm/@kissmybutton/motorcortex-flubber/0.0.0/package/package.json written
+21 silly publish { name: '@kissmybutton/motorcortex-flubber',
+21 silly publish   version: '0.0.0',
+21 silly publish   main: 'dist/index.js',
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+https://github.com/kissmybutton/motorcortex-flubber.git' },
+21 silly publish   author: { name: 'Kiss My Button PC' },
+21 silly publish   license: 'MIT',
+21 silly publish   scripts:
+21 silly publish    { build: 'npx babel ./src --out-dir ./dist --source-maps',
+21 silly publish      start: 'webpack && webpack-dev-server --inline --hot --disableHostCheck' },
+21 silly publish   dependencies: { flubber: '^0.4.2' },
+21 silly publish   devDependencies:
+21 silly publish    { 'babel-cli': '^6.26.0',
+21 silly publish      'babel-loader': '^7.1.4',
+21 silly publish      npx: '*',
+21 silly publish      'babel-preset-es2015': '*',
+21 silly publish      webpack: '^4.6.0',
+21 silly publish      'webpack-cli': '^2.0.15',
+21 silly publish      'webpack-dev-server': '^3.1.3',
+21 silly publish      '@kissmybutton/motorcortex': '1.10.8-rc.4' },
+21 silly publish   peerDependencies: { '@kissmybutton/motorcortex': '1.10.8-rc.4' },
+21 silly publish   readme: '# motorcortex-flubber',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: 'a5e58eb30b3807ceafee19ad2d8fe36fd21891f7',
+21 silly publish   description: '',
+21 silly publish   bugs: { url: 'https://github.com/kissmybutton/motorcortex-flubber/issues' },
+21 silly publish   homepage: 'https://github.com/kissmybutton/motorcortex-flubber#readme',
+21 silly publish   _id: '@kissmybutton/motorcortex-flubber@0.0.0',
+21 silly publish   _shasum: 'cfeddf30b9e3fdff87cc38d805d2a5bca7907cb3',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name @kissmybutton/motorcortex-flubber
+24 silly mapToRegistry scope (from package name) @kissmybutton
+25 verbose mapToRegistry no registry URL found in name for scope @kissmybutton
+26 silly mapToRegistry using default registry
+27 silly mapToRegistry registry https://registry.npmjs.org/
+28 silly mapToRegistry data Result {
+28 silly mapToRegistry   raw: '@kissmybutton/motorcortex-flubber',
+28 silly mapToRegistry   scope: '@kissmybutton',
+28 silly mapToRegistry   escapedName: '@kissmybutton%2fmotorcortex-flubber',
+28 silly mapToRegistry   name: '@kissmybutton/motorcortex-flubber',
+28 silly mapToRegistry   rawSpec: '',
+28 silly mapToRegistry   spec: 'latest',
+28 silly mapToRegistry   type: 'tag' }
+29 silly mapToRegistry uri https://registry.npmjs.org/@kissmybutton%2fmotorcortex-flubber
+30 verbose publish registryBase https://registry.npmjs.org/
+31 silly publish uploading /home/ubuntu/.npm/@kissmybutton/motorcortex-flubber/0.0.0/package.tgz
+32 verbose request uri https://registry.npmjs.org/@kissmybutton%2fmotorcortex-flubber
+33 verbose request sending authorization for write operation
+34 info attempt registry request try #1 at 8:01:18 PM
+35 verbose request using bearer token for auth
+36 verbose request id d04042ce37993ff5
+37 http request PUT https://registry.npmjs.org/@kissmybutton%2fmotorcortex-flubber
+38 http 400 https://registry.npmjs.org/@kissmybutton%2fmotorcortex-flubber
+39 verbose headers { date: 'Tue, 24 Jul 2018 20:01:28 GMT',
+39 verbose headers   'content-type': 'application/json',
+39 verbose headers   'content-length': '87',
+39 verbose headers   connection: 'keep-alive',
+39 verbose headers   'set-cookie': [ '__cfduid=d5f1c263047a71a50de209180f8fe124a1532462483; expires=Wed, 24-Jul-19 20:01:23 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+39 verbose headers   'cf-ray': '43f8fa59bbe068b4-CDG',
+39 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+39 verbose headers   server: 'cloudflare' }
+40 verbose request invalidating /home/ubuntu/.npm/registry.npmjs.org/_40kissmybutton_252fmotorcortex-flubber on PUT
+41 error publish Failed PUT 400
+42 verbose stack Error: Cannot publish over previously published version "0.0.0". : @kissmybutton/motorcortex-flubber
+42 verbose stack     at makeError (/home/ubuntu/.nvm/versions/node/v6.11.2/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
+42 verbose stack     at CachingRegistryClient.<anonymous> (/home/ubuntu/.nvm/versions/node/v6.11.2/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:290:14)
+42 verbose stack     at Request._callback (/home/ubuntu/.nvm/versions/node/v6.11.2/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:210:14)
+42 verbose stack     at Request.self.callback (/home/ubuntu/.nvm/versions/node/v6.11.2/lib/node_modules/npm/node_modules/request/request.js:187:22)
+42 verbose stack     at emitTwo (events.js:106:13)
+42 verbose stack     at Request.emit (events.js:191:7)
+42 verbose stack     at Request.<anonymous> (/home/ubuntu/.nvm/versions/node/v6.11.2/lib/node_modules/npm/node_modules/request/request.js:1048:10)
+42 verbose stack     at emitOne (events.js:96:13)
+42 verbose stack     at Request.emit (events.js:188:7)
+42 verbose stack     at IncomingMessage.<anonymous> (/home/ubuntu/.nvm/versions/node/v6.11.2/lib/node_modules/npm/node_modules/request/request.js:969:12)
+43 verbose statusCode 400
+44 verbose pkgid @kissmybutton/motorcortex-flubber
+45 verbose cwd /home/ubuntu/workspace
+46 error Linux 4.9.80-c9
+47 error argv "/home/ubuntu/.nvm/versions/node/v6.11.2/bin/node" "/home/ubuntu/.nvm/versions/node/v6.11.2/bin/npm" "publish"
+48 error node v6.11.2
+49 error npm  v3.10.10
+50 error code E400
+51 error Cannot publish over previously published version "0.0.0". : @kissmybutton/motorcortex-flubber
+52 error If you need help, you may report this error at:
+52 error     <https://github.com/npm/npm/issues>
+53 verbose exit [ 1, true ]
