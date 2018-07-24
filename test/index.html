@@ -1,0 +1,35 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>The HTML5 Herald</title>
+  <meta name="description" content="Flubber test">
+  <meta name="author" content="KMB">
+
+  <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+    <div id="clip-container">
+        <svg xmlns="http://www.w3.org/2000/svg" width="960" height="500">
+            <g transform="translate(240 10) scale(30 30)">
+                <path id="flubber" d="M1,0 L2,2 L0,2 Z"></path>
+            </g>
+        </svg>
+    </div>
+    <div id="timer-buttons">
+        <button id="play-pause">Play</button>
+    </div>
+    <div id="timer">
+        <div class="left-slot slot">-</div>
+        <div class="bar">
+            <div id="time-cursor"></div>
+        </div>
+        <div class="right-slot slot">-</div>
+    </div>
+  <script src="bundle.js"></script>
+</body>
+</html>
