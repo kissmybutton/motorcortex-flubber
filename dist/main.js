@@ -19,5 +19,6 @@ exports.default = {
   incidents: [{
     exportable: _Flubber2.default
   }],
-  channel: _motorcortex2.default.Channel
+  channel: _motorcortex2.default.AttributeChannel
 };
+//# sourceMappingURL=main.js.map

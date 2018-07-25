@@ -7,7 +7,7 @@ class Flubber extends MotorCortex.TimedIncident {
   }
 
   getScratchValue(id, attr) {
-      console.log(this.element.getAttribute('d'));
+      // console.log(this.element.getAttribute('d'));
       return this.element.getAttribute('d');
   }
 
