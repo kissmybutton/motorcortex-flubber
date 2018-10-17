@@ -5,7 +5,8 @@ export default {
   npm_name: "@kissmybutton/motorcortex-flubber",
   incidents: [
     {
-      exportable: Flubber
+      exportable: Flubber,
+      name: "Flubber"
     }
   ],
   channel: MotorCortex.AttributeChannel

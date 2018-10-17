@@ -17,7 +17,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = {
   npm_name: "@kissmybutton/motorcortex-flubber",
   incidents: [{
-    exportable: _Flubber2.default
+    exportable: _Flubber2.default,
+    name: "Flubber"
   }],
   channel: _motorcortex2.default.AttributeChannel
 };
