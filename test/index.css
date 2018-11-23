@@ -8,10 +8,6 @@
     width: 400px;
 }
 
-#flubber{
-    fill: #8b00ff;
-    display:block;
-}
 
 #timer, #timer-buttons, .btn{ /* controls */
             width: 400px;

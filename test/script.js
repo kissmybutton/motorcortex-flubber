@@ -4,8 +4,17 @@ const FlubberPlugin = MC.loadPlugin(MCFlubber);
 
 const myClip = new MC.Clip({
     id: 'my-clip',
-    type: 'plain',
-    host: document.getElementById('clip-container')
+    type: 'closed',
+    host: document.getElementById('clip-container'),
+    html: `<svg xmlns="http://www.w3.org/2000/svg" width="960" height="500">
+            <g transform="translate(240 10) scale(30 30)">
+                <path id="flubber" d="M1,0 L2,2 L0,2 Z"></path>
+            </g>
+        </svg>`,
+    css: `#flubber{
+        fill: #8b00ff;
+        display:block;
+    }`
 });
 
 const flubberIncident = new FlubberPlugin.Flubber(
