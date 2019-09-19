@@ -1,4 +1,3 @@
-import MotorCortex from "@kissmybutton/motorcortex";
 import Flubber from "./Flubber";
 
 export default {
@@ -9,5 +8,4 @@ export default {
       name: "Flubber"
     }
   ],
-  channel: MotorCortex.AttributeChannel
 };

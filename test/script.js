@@ -45,12 +45,7 @@ myClip.addIncident(flubberIncident, 0);
 myClip.addIncident(fubberIncident2, 2000);
 console.log(myClip);
 
-new MC.Timer({
-  Incident: myClip,
-  width: 290, // timer width must be .bar width minus #time-cursor width
-  cursorWidth: 10
-});
-// myClip.play();
 
+// myClip.play();
 
 

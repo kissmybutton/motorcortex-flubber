@@ -1,7 +1,7 @@
 import MotorCortex from "@kissmybutton/motorcortex";
 const flubber = require('flubber');
 
-class Flubber extends MotorCortex.TimedIncident {
+class Flubber extends MotorCortex.API.Incident {
   onGetContext() {
       this.interpolator = flubber.interpolate(this.getInitialValue('d'), this.animAttributes.d);
   }
