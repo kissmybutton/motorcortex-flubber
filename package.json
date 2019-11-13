@@ -20,9 +20,10 @@
     "webpack": "4.40.2",
     "webpack-cli": "3.3.9",
     "webpack-dev-server": "3.8.1",
-    "@kissmybutton/motorcortex": "3.0.0-rc06"
+    "@kissmybutton/motorcortex": "3.4.0-rc0",
+    "@kissmybutton/motorcortex-player": "1.4.5"
   },
   "peerDependencies": {
-    "@kissmybutton/motorcortex": "3.0.0-rc06"
+    "@kissmybutton/motorcortex": "3.4.0-rc0"
   }
 }

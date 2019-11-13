@@ -1,6 +1,7 @@
 const MCFlubber = require('../src/main.js');
 const MC = require('@kissmybutton/motorcortex');
 const FlubberPlugin = MC.loadPlugin(MCFlubber);
+const Player = require('@kissmybutton/motorcortex-player');
 
 const myClip = new MC.Clip({
     id: 'my-clip',
@@ -14,6 +15,9 @@ const myClip = new MC.Clip({
     css: `#flubber{
         fill: #8b00ff;
         display:block;
+    }
+    svg{
+        margin-top:150px;    
     }`
 });
 
@@ -43,7 +47,7 @@ const fubberIncident2 = new FlubberPlugin.Flubber(
 
 myClip.addIncident(flubberIncident, 0);
 myClip.addIncident(fubberIncident2, 2000);
-console.log(myClip);
+new Player({clip: myClip});
 
 
 // myClip.play();
