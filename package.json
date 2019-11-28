@@ -1,7 +1,7 @@
 {
   "name": "@kissmybutton/motorcortex-flubber",
-  "version": "1.0.0",
-  "main": "dist/index.js",
+  "version": "1.0.1",
+  "main": "dist/main.js",
   "repository": "https://github.com/kissmybutton/motorcortex-flubber",
   "author": "Kiss My Button PC",
   "license": "MIT",

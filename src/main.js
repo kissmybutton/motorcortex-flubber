@@ -5,7 +5,17 @@ export default {
   incidents: [
     {
       exportable: Flubber,
-      name: "Flubber"
+      name: "Flubber",
+      attributesValidationRules: {
+        animatedAttrs: {
+          type: "object",
+          props: {
+            d: {
+              type: "any"
+            }
+          }
+        }
+      }
     }
   ],
 };
