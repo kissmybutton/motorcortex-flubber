@@ -1,5 +1,5 @@
 import MotorCortex from "@kissmybutton/motorcortex";
-const flubber = require('flubber');
+import flubber from "flubber";
 
 class Flubber extends MotorCortex.API.MonoIncident {
   onGetContext() {
