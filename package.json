@@ -1,6 +1,6 @@
 {
   "name": "@kissmybutton/motorcortex-flubber",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "main": "dist/motorcortex-flubber.cjs.js",
   "module": "dist/motorcortex-flubber.esm.js",
   "browser": "dist/motorcortex-flubber.umd.js",

@@ -1,14 +1,17 @@
 import MotorCortex from "@kissmybutton/motorcortex";
-import flubber from "flubber";
+import { interpolate } from "flubber";
 
 class Flubber extends MotorCortex.API.MonoIncident {
   onGetContext() {
-      this.interpolator = flubber.interpolate(this.getInitialValue('d'), this.animAttributes.d);
+    this.interpolator = interpolate(
+      this.getInitialValue("d"),
+      this.animAttributes.d
+    );
   }
 
-  getScratchValue(id, attr) {
-      // console.log(this.element.getAttribute('d'));
-      return this.element.getAttribute('d');
+  getScratchValue(/*id, attr*/) {
+    // console.log(this.element.getAttribute('d'));
+    return this.element.getAttribute("d");
   }
 
   onProgress(t) {
