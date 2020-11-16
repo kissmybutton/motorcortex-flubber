@@ -1,9 +1,9 @@
 const MCFlubber = require("../dist/motorcortex-flubber.umd");
-const MC = require("@kissmybutton/motorcortex");
-const FlubberPlugin = MC.loadPlugin(MCFlubber);
+const MotorCortex = require("@kissmybutton/motorcortex");
+const FlubberPlugin = MotorCortex.loadPlugin(MCFlubber);
 const Player = require("@kissmybutton/motorcortex-player");
 
-const myClip = new MC.Clip({
+const myClip = new MotorCortex.HTMLClip({
   id: "my-clip",
   host: document.getElementById("clip"),
   html: `

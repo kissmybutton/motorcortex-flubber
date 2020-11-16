@@ -1,7 +1,8 @@
 import MotorCortex from "@kissmybutton/motorcortex";
-import { interpolate } from "flubber";
+const flubber = require("flubber");
+const interpolate = flubber.interpolate;
 
-class Flubber extends MotorCortex.API.MonoIncident {
+class Flubber extends MotorCortex.Effect {
   onGetContext() {
     this.interpolator = interpolate(
       this.getInitialValue("d"),

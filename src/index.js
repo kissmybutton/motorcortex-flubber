@@ -11,11 +11,11 @@ export default {
           type: "object",
           props: {
             d: {
-              type: "any"
-            }
-          }
-        }
-      }
-    }
+              type: "any",
+            },
+          },
+        },
+      },
+    },
   ],
 };
