@@ -1,7 +1,9 @@
 import Flubber from "./Flubber";
+const pkg = require("../package.json");
 
 export default {
-  npm_name: "@kissmybutton/motorcortex-flubber",
+  npm_name: pkg.name,
+  version: pkg.version,
   incidents: [
     {
       exportable: Flubber,
