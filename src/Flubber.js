@@ -4,14 +4,10 @@ const interpolate = flubber.interpolate;
 
 class Flubber extends MotorCortex.Effect {
   onGetContext() {
-    this.interpolator = interpolate(
-      this.getInitialValue("d"),
-      this.animAttributes.d
-    );
+    this.interpolator = interpolate(this.initialValue, this.animAttributes.d);
   }
 
-  getScratchValue(/*id, attr*/) {
-    // console.log(this.element.getAttribute('d'));
+  getScratchValue() {
     return this.element.getAttribute("d");
   }
 
