@@ -1,5 +1,5 @@
 import MotorCortex from "@kissmybutton/motorcortex";
-const flubber = require("flubber");
+import * as flubber from "flubber";
 const interpolate = flubber.interpolate;
 
 class Flubber extends MotorCortex.Effect {

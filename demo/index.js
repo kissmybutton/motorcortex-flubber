@@ -1,30 +1,38 @@
-const MCFlubber = require("../dist/motorcortex-flubber.umd");
-const MotorCortex = require("@kissmybutton/motorcortex");
+import MotorCortex from "@kissmybutton/motorcortex";
+import Player from "@kissmybutton/motorcortex-player";
+import MCFlubber from "../dist/motorcortex-flubber.umd";
+
 const FlubberPlugin = MotorCortex.loadPlugin(MCFlubber);
-const Player = require("@kissmybutton/motorcortex-player");
 
 const myClip = new MotorCortex.HTMLClip({
   id: "my-clip",
   host: document.getElementById("clip"),
   html: `
-        <div class="wrapper">
-            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
-                <g transform="scale(30)">
-                    <path id="flubber" d="M1,0 L2,2 L0,2 Z"></path>
-                </g>
-            </svg>
-        </div>`,
+    <div class="wrapper">
+      <svg xmlns="http://www.w3.org/2000/svg" width="150px" height="150px">
+        <g transform="scale(30)">
+          <path id="flubber" d="M1,0 L2,2 L0,2 Z"></path>
+        </g>
+      </svg>
+    </div>`,
   css: `
     .wrapper{
-        display:flex;
-        align-items:center;
-        justify-content:center;
+      background:white;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      width:100%;
+      height:100%;
     }
     #flubber{
-        fill: #8b00ff;
-        display:block;
+      fill: #8b00ff;
+      display:block;
     }
-    `,
+  `,
+  containerParams: {
+    width: "400px",
+    height: "300px",
+  },
 });
 
 const flubberIncident = new FlubberPlugin.Flubber(
@@ -60,5 +68,3 @@ const fubberIncident2 = new FlubberPlugin.Flubber(
 myClip.addIncident(flubberIncident, 0);
 myClip.addIncident(fubberIncident2, 2000);
 new Player({ clip: myClip });
-
-// myClip.play();
