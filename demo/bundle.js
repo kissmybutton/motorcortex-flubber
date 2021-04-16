@@ -11,7 +11,7 @@
   };
   var n,
     i = !0,
-    r = "d6e7f56e315f6d984bbe",
+    r = "2640c1b461b4b0147daa",
     s = {},
     o = [],
     a = [];
@@ -19784,7 +19784,7 @@
         }
         return {
           npm_name: "@kissmybutton/motorcortex-flubber",
-          version: "1.1.7",
+          version: "1.1.8",
           incidents: [
             {
               exportable: F,
