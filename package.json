@@ -79,7 +79,7 @@
     "@size-limit/preset-big-lib": "^6.0.3",
     "babel-loader": "8.2.2",
     "browserslist": "4.16.3",
-    "commitizen": "4.2.3",
+    "commitizen": "4.2.4",
     "concurrently": "^6.3.0",
     "core-js": "^3.18.3",
     "css-loader": "3.6.0",
