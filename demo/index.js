@@ -1,10 +1,10 @@
-import MotorCortex from "@kissmybutton/motorcortex";
-import Player from "@kissmybutton/motorcortex-player";
-import MCFlubber from "../dist/motorcortex-flubber.umd";
+import { HTMLClip, loadPlugin } from "@donkeyclip/motorcortex";
+import Player from "@donkeyclip/motorcortex-player";
+import MCFlubber from "../dist/motorcortex-flubber.esm";
 
-const FlubberPlugin = MotorCortex.loadPlugin(MCFlubber);
+const FlubberPlugin = loadPlugin(MCFlubber);
 
-const myClip = new MotorCortex.HTMLClip({
+const myClip = new HTMLClip({
   id: "my-clip",
   host: document.getElementById("clip"),
   html: `

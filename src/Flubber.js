@@ -1,8 +1,7 @@
-import MotorCortex from "@kissmybutton/motorcortex";
-import * as flubber from "flubber";
-const interpolate = flubber.interpolate;
+import { Effect } from "@donkeyclip/motorcortex";
+import { interpolate } from "flubber";
 
-class Flubber extends MotorCortex.Effect {
+class Flubber extends Effect {
   onGetContext() {
     this.interpolator = interpolate(this.initialValue, this.animAttributes.d);
   }
