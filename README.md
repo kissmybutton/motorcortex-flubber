@@ -87,10 +87,10 @@ const fubberIncident2 = new FlubberPlugin.Flubber(
 
 ## Demo
 
-[Check out a demo here](https://kissmybutton.github.io/motorcortex-flubber/demo/)
+[Check out a demo here](https://donkeyclip.com.github.io/motorcortex-flubber/demo/)
 
 ## License
 
 [MIT License](https://opensource.org/licenses/MIT)
 
-[![Kiss My Button](https://presskit.kissmybutton.gr/logos/kissmybutton-logo-small.png)](https://kissmybutton.gr)
+[![Donkeyclip](https://presskit.donkeyclip.com/logos/donkey%20clip%20logo.svg)](donkeyclip.com)
