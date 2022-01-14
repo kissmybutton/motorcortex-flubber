@@ -1,7 +1,33 @@
-# motorcortex-flubber
+# MotorCortex-Flubber
 
-motorcortex-flubber plugin brings [flubber](https://github.com/veltman/flubber) library's capabilities into MotorCortex, available as Incident.
+**Table of Contents**
+
+- [MotorCortex-Flubber](#motorcortex-flubber)
+  - [Demo](#demo)
+- [Intro / Features](#intro--features)
+- [Getting Started](#getting-started)
+  - [Installation](#installation)
+  - [Importing and Loading](#importing-and-loading)
+- [Creating Incidents](#creating-incidents)
+  - [Flubber](#flubber)
+- [Adding Incidents in your clip](#adding-incidents-in-your-clip)
+- [Contributing](#contributing)
+- [License](#license)
+- [Sponsored by](#sponsored-by)
+
+## Demo
+
+[Check it out here](https://donkeyclip.github.io/motorcortex-flubber/demo/)
+
+# Intro / Features
+
+Motorcortex-Flubber plugin brings [flubber](https://github.com/veltman/flubber) library's capabilities into MotorCortex, available as Incident.
 _"The goal of this library is to provide a best-guess interpolation for any two arbitrary shapes (or collections of shapes) that results in a reasonably smooth animation, without overthinking it."_
+
+This Plugin exposes one Incident:
+- Flubber
+
+# Getting Started
 
 ## Installation
 
@@ -11,29 +37,26 @@ $ npm install @donkeyclip/motorcortex-flubber
 $ yarn add @donkeyclip/motorcortex-flubber
 ```
 
-```javascript
-import Flubber from "@donkeyclip/motorcortex-flubber";
-```
-
-## Documentation
-
-### Import and load the plugin to MotorCortex
+## Importing and loading
 
 ```javascript
-import MotorCortex from "@donkeyclip/motorcortex";
+import { loadPlugin } from "@donkeyclip/motorcortex";
 import FlubberPluginDefinition from "@donkeyclip/motorcortex-flubber";
-
-const FlubberPlugin = MotorCortex.loadPlugin(FlubberPluginDefinition);
+const FlubberPlugin = loadPlugin(FlubberPluginDefinition);
 ```
+# Creating Incidents
 
-### Create an Flubber transformation animation Incident and place it anywhere in your Clip
+## Flubber
 
-The one and only Incident exposed by the plugin has the name `Flubber`. Flubber Incident accepts on its `animatedAttrs` property the `d` parameter which defines the final state of the svg path to be transformed. The Incident should target the svg path to transform (via the `selector` of its props).
-Here's is full example:
+Flubber Incident accepts on its `animatedAttrs` property the `d` parameter which defines the final state of the svg path to be transformed. The Incident should target the svg path to transform (via the `selector` of its props).
+Here's is an example which include both the creation of the incident and the creation of the clip where the incident will be applied:
 
 ```javascript
-// notice the svg path with id "flubber" on the html of the clip. This is the path we will apply the Flubber transformatio to.
-const myClip = new MC.Clip({
+// Don't forget to import also HTMLClip from "@donkeyclip/motorcortex" in order to create a clip.
+import { HTMLClip } from "@donkeyclip/motorcortex";
+// Νotice the svg path with id "flubber" on the html of the clip. 
+// This is the path we will apply the Flubber transformation to.
+const myClip = new HTMLClip({
   host: document.getElementById("clip-container"),
   html: `<svg xmlns="http://www.w3.org/2000/svg" width="960" height="500">
             <g transform="translate(240 10) scale(30 30)">
@@ -85,12 +108,24 @@ const fubberIncident2 = new FlubberPlugin.Flubber(
 );
 ```
 
-## Demo
+# Adding Incidents in your clip
 
-[Check out a demo here](https://donkeyclip.github.io/motorcortex-flubber/demo/)
+```javascript
+clipName.addIncident(incidentName,startTime);
+```
 
-## License
+# Contributing 
+
+In general, we follow the "fork-and-pull" Git workflow, so if you want to submit patches and additions you should follow the next steps:
+1.	**Fork** the repo on GitHub
+2.	**Clone** the project to your own machine
+3.	**Commit** changes to your own branch
+4.	**Push** your work back up to your fork
+5.	Submit a **Pull request** so that we can review your changes
+
+# License
 
 [MIT License](https://opensource.org/licenses/MIT)
 
+# Sponsored by
 [<img src="https://presskit.donkeyclip.com/logos/donkey%20clip%20logo.svg" width=250></img>](https://donkeyclip.com)
