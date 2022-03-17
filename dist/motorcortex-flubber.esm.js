@@ -3400,7 +3400,7 @@ var Flubber = /*#__PURE__*/function (_Effect) {
   }, {
     key: "onProgress",
     value: function onProgress(t) {
-      this.element.setAttribute("d", this.interpolator(t));
+      this.element.setAttribute("d", this.interpolator(this.getFraction(t)));
     }
   }]);
 
