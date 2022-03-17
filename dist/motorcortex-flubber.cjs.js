@@ -3410,7 +3410,7 @@ var Flubber = /*#__PURE__*/function (_Effect) {
 }(motorcortex.Effect);
 
 var name = "@donkeyclip/motorcortex-flubber";
-var version = "1.1.10";
+var version = "2.0.0";
 
 var index = {
   npm_name: name,

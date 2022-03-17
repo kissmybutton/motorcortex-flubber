@@ -1,5 +1,16 @@
 # Changelog
 
+## [2.0.0](https://www.github.com/donkeyclip/motorcortex-flubber/compare/v1.1.10...v2.0.0) (2022-03-17)
+
+
+### ⚠ BREAKING CHANGES
+
+* update mc version
+
+### Bug Fixes
+
+* update mc version ([7124b25](https://www.github.com/donkeyclip/motorcortex-flubber/commit/7124b2531bd0f304818ba52b4fc2e78ae95979fe))
+
 ### 1.1.10 (2021-10-26)
 
 
