@@ -11,7 +11,7 @@ class Flubber extends Effect {
   }
 
   onProgress(t) {
-    this.element.setAttribute("d", this.interpolator(t));
+    this.element.setAttribute("d", this.interpolator(this.getFraction(t)));
   }
 }
 

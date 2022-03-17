@@ -8,7 +8,7 @@
   "author": "DonkeyClip (donkeyclip.com) <opensource@donkeyclip.com>",
   "license": "MIT",
   "engines": {
-    "node": ">=10"
+    "node": ">=12"
   },
   "scripts": {
     "lint": "eslint -c .eslintrc src/**/*.js",
@@ -47,8 +47,8 @@
     "@babel/plugin-syntax-jsx": "7.16.7",
     "@babel/plugin-transform-react-jsx": "7.17.3",
     "@babel/preset-env": "7.16.11",
-    "@donkeyclip/motorcortex": "7.9.2",
-    "@donkeyclip/motorcortex-player": "2.5.0",
+    "@donkeyclip/motorcortex": "8.0.0",
+    "@donkeyclip/motorcortex-player": "2.5.2",
     "@rollup/plugin-babel": "5.3.1",
     "@rollup/plugin-commonjs": "21.0.2",
     "@rollup/plugin-json": "4.1.0",
@@ -79,6 +79,6 @@
     "webpack-dev-server": "4.7.4"
   },
   "peerDependencies": {
-    "@donkeyclip/motorcortex": "^7"
+    "@donkeyclip/motorcortex": ">= 8 < 9"
   }
 }
