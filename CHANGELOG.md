@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.1.0](https://github.com/donkeyclip/motorcortex-flubber/compare/v2.0.0...v2.1.0) (2022-04-07)
+
+
+### Features
+
+* drop explorer 11 support ([ed887f7](https://github.com/donkeyclip/motorcortex-flubber/commit/ed887f782dd3a848827662705dddb18818847a67))
+* update compatibility with motorcortex ([316d219](https://github.com/donkeyclip/motorcortex-flubber/commit/316d21952d3f3847a8b607c1658adae1240ac205))
+
 ## [2.0.0](https://www.github.com/donkeyclip/motorcortex-flubber/compare/v1.1.10...v2.0.0) (2022-03-17)
 
 
