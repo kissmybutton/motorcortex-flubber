@@ -54,7 +54,7 @@
     "@rollup/plugin-json": "4.1.0",
     "@rollup/plugin-node-resolve": "13.2.1",
     "@size-limit/preset-big-lib": "6.0.4",
-    "babel-loader": "8.2.4",
+    "babel-loader": "8.2.5",
     "browserslist": "4.20.2",
     "concurrently": "6.5.1",
     "core-js": "3.22.0",
