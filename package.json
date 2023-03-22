@@ -57,7 +57,7 @@
     "babel-loader": "8.3.0",
     "browserslist": "4.21.5",
     "concurrently": "6.5.1",
-    "core-js": "3.22.3",
+    "core-js": "3.29.1",
     "css-loader": "6.7.3",
     "eslint": "7.32.0",
     "eslint-config-prettier": "8.5.0",
