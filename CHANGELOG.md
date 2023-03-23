@@ -1,5 +1,12 @@
 # Changelog
 
+### [2.1.1](https://github.com/donkeyclip/motorcortex-flubber/compare/v2.1.0...v2.1.1) (2023-03-23)
+
+
+### Bug Fixes
+
+* delete commitlint.config.js ([1bfe280](https://github.com/donkeyclip/motorcortex-flubber/commit/1bfe280d01611d37eb6b69c7a850e6c77b2ec3f0))
+
 ## [2.1.0](https://github.com/donkeyclip/motorcortex-flubber/compare/v2.0.0...v2.1.0) (2022-04-07)
 
 

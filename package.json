@@ -1,6 +1,6 @@
 {
   "name": "@donkeyclip/motorcortex-flubber",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "main": "dist/motorcortex-flubber.cjs.js",
   "module": "dist/motorcortex-flubber.esm.js",
   "browser": "dist/motorcortex-flubber.umd.js",
